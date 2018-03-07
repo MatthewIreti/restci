@@ -1,0 +1,34 @@
+<form class="filter" ng-show="hideFilter" ng-submit="init()">
+    <div class="panel ">
+        <div class="panel-heading">
+            <span class="panel-title">Search</span>
+            <div class="pull-right">
+                <a ng-click="hideFilter=false" class="btn btn-danger btn-sm">
+                    <i class="fa fa-times"></i>
+                </a>
+            </div>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div ng-include="filterTemplate"></div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="#" ng-click="resetFiltering()" class="btn btn-accent"><i class="fa fa-close"></i>
+                        Reset</a>
+
+                    <a href="#" ng-show="hideDownloadButton==true" ng-click="downloadAsExcel()" class="btn btn-success">
+                        <i class="fa fa-download"></i> Download as Excel Sheet
+                    </a>
+                    <div class="pull-right">
+
+                        <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i> Search</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>

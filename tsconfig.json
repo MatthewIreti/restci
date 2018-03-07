@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true,
+    "typeRoots": [
+      "/scripts/typings/angular-resource.d.ts",
+      "/scripts/typings/jquery"
+    ]
+  },
+
+  "exclude": [
+    "node_modules"
+  ]
+}
